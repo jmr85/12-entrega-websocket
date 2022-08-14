@@ -2,7 +2,7 @@ const express = require('express');
 const { Server: HttpServer } = require('http');
 const { Server: IOServer } = require('socket.io');
 
-const ContenedorProducto = require('./service/Contenedor');
+const ContenedorProducto = require('./service/ContenedorProducto');
 
 let contenedorProducto = new ContenedorProducto('data/productos.json');
 
