@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "nombre": "Producto 1",
+    "precio": 100,
+    "foto": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bouteille_de_Coca-Cola_d%27un_litre_cinq_001.jpg/220px-Bouteille_de_Coca-Cola_d%27un_litre_cinq_001.jpg"
+  },
+  {
+    "nombre": "roberto",
+    "precio": "2323",
+    "foto": "ass",
+    "id": 2
+  },
+  {
+    "nombre": "sdsdsd",
+    "precio": "1212",
+    "foto": "",
+    "id": 3
+  },
+  {
+    "nombre": "Juan Martin",
+    "precio": "2323",
+    "foto": "Juan Martin",
+    "id": 4
+  },
+  {
+    "nombre": "pedro",
+    "precio": "78",
+    "foto": "pedro",
+    "id": 5
+  },
+  {
+    "nombre": "yanina",
+    "precio": "123",
+    "foto": "https://latinafy.com/images/thumbnails/590/590/detailed/8/taragui-sin-palo__32117.1613753373.1280.1280.jpg",
+    "id": 6
+  },
+  {
+    "nombre": "juancarlos perez",
+    "precio": "56576",
+    "foto": "juancarlos perez",
+    "id": 7
+  },
+  {
+    "nombre": "sdsd",
+    "precio": "23",
+    "foto": "sdsd",
+    "id": 8
+  },
+  {
+    "nombre": "Juan Martin",
+    "precio": "2323",
+    "foto": "https://pbs.twimg.com/profile_images/1013761221248634880/cRzWAp_F_400x400.jpg",
+    "id": 9
+  }
+]
