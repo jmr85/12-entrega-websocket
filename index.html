@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-12">
                     <h1><strong>Ingrese Producto</strong></h1>
-                    <form onsubmit="return addProduct(this)" class="mt-5">
+                    <form onsubmit="return addProduct(this)" class="mt-4">
                         <div class="form-group">
                             <label for="nombre">Nombre</label>
                             <input type="text" class="form-control p-2 mb-2" id="nombre" name="nombre"
@@ -49,7 +49,7 @@
             </div>
             <hr>
             <div id="divWrap" class="col">
-                <h1 class="text-danger"><strong>Lista de productos</strong></h1>
+                <h1 style="color: brown"><strong>Lista de productos</strong></h1>
                 <table id="tablaListado" class="table table-dark table-hover">
                     <thead>
                         <tr>
@@ -66,25 +66,35 @@
         </div>
     </div>
     <div class="containerDiv m-4 p-5">
-        <h1><strong>Centro de Mensajes</strong></h1>
-        <form onsubmit="return addMessage(this)" class="mt-5">
-            <div class="form-group">
-                <input type="text" class="form-control p-2 mb-2" id="email" name="email"
-                    placeholder="Enter email" required>
-            </div>
-            <hr>
-            <p id="chat">
-                
-            </p>
-            <div class="form-group">
-                <input type="text" class="form-control p-2 mb-2 w-75" id="message" name="email"
-                    placeholder="Ingresa un mensaje..." required>
-            </div>
-            <button type="submit" class="btn btn-info">Enviar</button>
-        </form>
+        <a type="button" class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample2" role="button"
+            aria-expanded="false" aria-controls="multiCollapseExample2">
+            <iframe title="collapse" src="icons/arrows-collapse.svg" width="16px" height="16px"> </iframe>
+        </a>
+        <div id="multiCollapseExample2">
+            <h1><strong>Centro de Mensajes</strong></h1>
+            <form onsubmit="return addMessage(this)" class="row g-3 mt-4">
+                <div class="form-group">
+                    <input type="email" class="form-control p-2 mb-2 w-50" id="email" name="email"
+                        placeholder="miemail@mail.com" required>
+                </div>
+                <hr>
+                <div id="chat">
+                    <!-- aca va el chat -->
+                </div>
+                <div class="col-auto">
+                    <input type="text" class="form-control p-2 mb-2" id="message" name="message"
+                        placeholder="Ingresa un mensaje..." required>
+                </div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+            </form>
+        </div>
     </div>
     <!-- Socket.io Client -->
-    <script src="index.js"></script>
+    <script src="utils/fecha.js"></script>
+    <script src="products-client.js"></script>
+    <script src="chat-client.js"></script>
 </body>
 
 </html>

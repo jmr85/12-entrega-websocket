@@ -2,14 +2,9 @@
 // el code del cliente es practicamente igual al del server
 const socket = io().connect();
      
-const render = (productos) => {
+const renderProducts = (productos) => {
     let tablaListado = document.getElementById('tablaListado');
-    // if(!productos.length){ 
-    //     tablaListado.setAttribute('class', 'alert alert-warning w-50 mx-auto text-center');
-    //     tablaListado.setAttribute('role', 'alert');
-    //     tablaListado.innerHTML = '<strong>No hay productos</strong>';
-    // }
-    // tablaListado.style.display = 'table';
+   
     productos.length? tablaListado.style.display = 'table' :  tablaListado.style.display = 'none';
     
     let listado = document.getElementById('listado');
@@ -27,7 +22,7 @@ const render = (productos) => {
         return `   
             <tr>
                 <td>${producto.nombre}</td>
-                <td>${producto.precio}</td>           
+                <td>$${producto.precio}</td>           
                 <td>${isPhoto}</td>      
             </tr>  
         `;
@@ -50,7 +45,7 @@ const addProduct = (e) => {
 }
 
 // escuchamos lo que da el servidor
-socket.on('mensaje-servidor', (mensaje) => {
+socket.on('mensaje-servidor-producto', (mensaje) => {
     // console.log('mensaje-servidor: ' + mensaje);
-    render(mensaje.productos);
+    renderProducts(mensaje.productos);
 });
